@@ -1,3 +1,6 @@
+/// <reference path="@types/pixi.d.ts" />
+/// <reference path="@types/stats.d.ts" />
+
 let type:string="WebGL";
 if(PIXI.utils.isWebGLSupported())
     type="WebGL";
@@ -481,7 +484,7 @@ let rootPoints:{
 };
 
 //Create a Pixi Application
-let pMain:HTMLMainElement=document.getElementsByTagName("main")[0] as HTMLMainElement,
+let pMain:HTMLElement=document.getElementsByTagName("main")[0] as HTMLElement,
     pCanvas:HTMLCanvasElement=pMain.getElementsByTagName("canvas")[0] as HTMLCanvasElement,
     stats:Stats=new Stats(),
     app:PIXI.Application=new PIXI.Application({
