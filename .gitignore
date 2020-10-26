@@ -1,2 +1,6 @@
 /.*
-/build
+/assets
+/scss
+/ts
+/README.md
+!.gitignore
